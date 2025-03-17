@@ -1,0 +1,138 @@
+[toolchain]
+
+[features]
+seeds = false
+skip-lint = false
+
+[programs.localnet]
+rememe = "EPATz1DqX8BKYevRbPoiMrW6py8Yu78dn9xxwbD5Jfa1"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "Localnet"
+wallet = "keypair.json"
+
+[scripts]
+local = "yarn test"
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/rememe.ts"
+
+
+[test.validator]
+url = "nyaaa"
+reset = true
+
+[[test.genesis]]
+address = "FEESngU3neckdwib9X3KWqdL7Mjmqk9XNp3uh5JbP4KP"
+program = "./dump/fees.so" 
+
+# AmmProgram
+[[test.genesis]]
+address = "Eo7WjKq67rjJQSZxS6z3YkapzY3eMj6Xy8X5EQVn5UaB"
+program = "./dump/ammprog.so"
+
+# VaultProgram
+[[test.genesis]]
+address = "24Uqj9JCLxUeoC3hGfh5W3s9FM9uCHDS2SG3LYwBpyTi"
+program = "./dump/vaultprog.so"
+
+# Vault
+[[test.validator.clone]]
+address = "GndzrVMimNnhR8p4Ks467GNK4LHbUU3ngcByeDZhbiBd"
+
+[[test.validator.clone]]
+address = "M3M3pSFptfpZYnWNUgAbyWzKKgPo5d1eWmX6tbiSF2K"
+
+# Top Staker List
+[[test.validator.clone]]
+address = "AVv55xWuBrDMAnB2hLVVgQWwMaX2SGb3tzjzJYRtTi7k"
+
+# Full Balance List
+[[test.validator.clone]]
+address = "GVC9dPTPC4DJWg5noEAQRM6cB4RMrWVH51WCbmmhcrhw"
+
+[[test.validator.clone]]
+address = "Ck4usAm1imY2UNxgnnjp53Gki1s5UVHQuu2WLkFFzwLu"
+
+# Full Balance List
+[[test.validator.clone]]
+address = "GVC9dPTPC4DJWg5noEAQRM6cB4RMrWVH51WCbmmhcrhw"
+
+# Stake Token Vault:
+[[test.validator.clone]]
+address = "BWr9KG6NjzEQL2jS4qg4t4W8ie1YyVKimkA15kdQyS9b"
+
+# Quote Token Vault:
+[[test.validator.clone]]
+address = "97EL4sw3DWigmyEwXwddWeRnH3eZyiBJD4npPtPwP86x"
+
+# Pool 
+[[test.validator.clone]]
+address = "79raiHK7DDEGYAQ5dCgKd55GtoxaytvdDZKLEbCM3gRy"
+
+# LP MINT 
+[[test.validator.clone]]
+address = "7rAcrfXUPW92cV9aCqdBF64hW6oNgUwAbiPtxfUk4FKE"
+
+# LockEscrow
+[[test.validator.clone]]
+address = "BAFhKJ5c89AsV9fM1tUCsdEQu7RqkHyZsNe3rwL6JExQ"
+
+# EscrowVault
+[[test.validator.clone]]
+address = "3wNidmKLMwXEkuRyqKaZ2eGkMfFUf291uTPgHjsLRG72"
+
+
+# BTokenVault
+[[test.validator.clone]]
+address = "HZeLxbZ9uHtSpwZC3LBr4Nubd14iHwz7bRSghRZf5VCG"
+
+# AVault
+[[test.validator.clone]]
+address = "GtiQT21N57RJa7jxLYknSwcCaQEbW2JAMJPEFaMRH3hb"
+
+# BVault    
+[[test.validator.clone]]
+address = "FERjPVNEa7Udq8CEv68h6tPL46Tq7ieE49HrE2wea3XT"
+
+# Smallest Stake Escrow
+[[test.validator.clone]]
+address = "Gv4FmrWGp8FwwrNyfCQQjoZSA4Jq1JorViQ3GQ9H5nki"
+
+# ATokenVault
+[[test.validator.clone]]
+address = "g3hngjniEwXwiFjWFjJeamyrX8GB4qtktr3SfhuCeUp"
+
+# AVaultLP    
+[[test.validator.clone]]
+address = "A11MfejF4NvMZmMCFKpGY2X1aw7xg4mEYH864tPBTByu"
+
+
+# BVaultLP    
+[[test.validator.clone]]
+address = "GCGqjr7sU6mkkKZm21mJjHLnViCVxSP8CTAJdDjP6Dv"
+
+# AVaultLPMint
+[[test.validator.clone]]
+address = "2JrjcGGUy7nNVeNsM7wWUrNWGRmZBZTNpKwUd7FLPQFP"
+
+# BVaultLPMint
+[[test.validator.clone]]
+address = "FZN7QZ8ZUUAxMPfxYEYkH3cXUASzH8EqA6B4tyCL8f1j"
+
+# Account
+[[test.validator.clone]]
+address = "CGzHY1vtheFMPCx1EsZV8dcF1xYT9C1sxJq5KyVLjMhj"
+
+# Account
+[[test.validator.clone]]
+address = "52YJJV998iERn5NYhkZPN6evns5Vo9jHsDRiZmkJ8jvk"
+
+# Account
+[[test.validator.clone]]
+address = "BfvBAAs7GCtVFQBCf9arVjCBquGgXqgY8wBBPkqn5TsU"
+
+# Token Vault
+[[test.validator.clone]]
+address = "Hsg2hR4gUQ2NHQn6PPcqiDWPGwZiChrqCPDeLTz3UVSN"
